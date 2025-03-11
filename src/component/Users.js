@@ -63,22 +63,6 @@ export const Users = () => {
     return (
         <>
             <div className="container">
-                {/* <form className="mt-4">
-                    <label htmlFor="exampleInputId" className="block mb-2 text-sm font-medium text-gray-600">Id</label>
-                    <input type="Id" onChange={(e)=>{setId(e.target.value)}} id="exampleInputId" className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300" placeholder="Enter your name" />
-                    
-                    <label htmlFor="exampleInputUserName" className="block mt-3 mb-2 text-sm font-medium text-gray-600">User Name</label>
-                    <input type="username" onChange={(e)=>{setUserName(e.target.value)}} id="exampleInputId" className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300" />
-                    
-                    <label htmlFor="exampleInputPassword1" className="block mt-3 mb-2 text-sm font-medium text-gray-600">Password</label>
-                    <input  type="password" onChange={(e)=>{setPassword(e.target.value)}}id="exampleInputPassword1" className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300"/>
-                    
-                    <label htmlFor="exampleInputName" className="block mt-3 mb-2 text-sm font-medium text-gray-600">Name</label>
-                    <input  type="name" onChange={(e)=>{setName(e.target.value)}}id="exampleInputName" className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300"/>
-                    
-                    <button type="submit" onClick={submitData} className="w-full px-4 py-2 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Add User</button>
-                </form> */}
-
                 <form className="w-25 offset-4">
                     <h1>Add Users</h1>
                     <div className="mb-3">
@@ -88,7 +72,6 @@ export const Users = () => {
                     <div className="mb-3">
                         <label htmlFor="username" className="form-label">User Name</label>
                         <input type="text" name="username" className="form-control" onChange={(e)=>{setUserName(e.target.value)}} id="username" aria-describedby="username" />
-
                     </div>                    
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label">Password</label>
@@ -97,11 +80,9 @@ export const Users = () => {
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>
                         <input type="text" name="email" className="form-control" id="name" onChange={(e)=>{setName(e.target.value)}} aria-describedby="name" />
-
                     </div>
                     <button type="button" className="btn btn-primary" onClick={submitData} >Add Users</button>
                 </form>
-
                 {/* <form>
                     <div className="mb-3">
                         <label htmlFor="exampleInputId" className="form-label">Id</label>
