@@ -67,11 +67,11 @@ export const Users = () => {
                     <h1>Add Users</h1>
                     <div className="mb-3">
                         <label htmlFor="id" className="form-label">Id</label>
-                        <input type="id" name="username" placeholder="id" className="form-control" onChange={(e)=>{setId(e.target.value)}} id="id" aria-describedby="id" />
+                        <input type="id" name="id" placeholder="id" className="form-control" onChange={(e)=>{setId(e.target.value)}} id="id" />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="username" className="form-label">User Name</label>
-                        <input type="text" name="username" className="form-control" onChange={(e)=>{setUserName(e.target.value)}} id="username" aria-describedby="username" />
+                        <input type="username" name="username" className="form-control" onChange={(e)=>{setUserName(e.target.value)}} id="username" aria-describedby="username" />
                     </div>                    
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label">Password</label>
